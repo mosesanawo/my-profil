@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    min-height: 60px;
+    background: hsl(169, 18%, 48%);
+    border-bottom: 4px solid green;
+    padding: 0 5%;
+}
+
+.logo h3{
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: red;
+}
+
+.header-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    padding: 0px 35px;
+}
+
+.header-contact img{
+    height: 45px;
+    width: 70px;
+}
+
+
+nav{
+    display: flex;
+    gap: 70px;
+    
+}
+nav a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.icon-wrap{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+.icon-wrap i{
+    border-radius: 90%;
+    box-sizing: border-box;
+    font-size: 20px;
+    background: rgb(234, 234, 238);
+    color: #e6be11;
+}
+header{
+    position: sticky;
+}
+
+.icon-wrap i:hover{
+    cursor: pointer;
+    background: rgb(49, 49, 228);
+}
+
+.banner{
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.100),rgba(0, 0, 0, 0.70)),url(images/pexels-designecologist-1779487.jpg);
+}
+
+.banner-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 300px;
+}
+
+.profil-intro{
+    padding-left: 10%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 450px;
+}
+
+.profil-intro h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 76px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-family: muli;
+    letter-spacing: 1.8px;
+    color: rgb(242, 242, 242);
+}
+
+.banner-card p{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #666;
+}
+.profil-intro span{
+    max-width: 450px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: rgb(242, 242, 242);
+    text-transform: capitalize;
+    font-family: muli;
+}
+
+.banner-card img{
+    width: 700px;
+    height: 550px;
+    background: linear-gradient(rgba(40, 31, 91, 0.5), rgba(40, 31, 91, 0.5), rgba(40, 31, 91, 0.5)) center center / cover, url(/images/v3-new.png);
+    background-position: center center;
+    border-radius: 100% 0px 0px 100%;
+}
+
+.btn{
+    background: rgb(97, 92, 253);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    font-family: muli;
+    cursor: pointer;
+    color: rgb(255, 255, 255) !important;
+}
+
+.services{
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px 20px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    transition: all 0.5s ease-in 0s;
+}
+
+.about-intro{
+    display: flex;
+    text-transform: capitalize;
+    background: rgb(39, 15, 100);
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    min-height: 300px;
+    font-family: muli;
+}
+
+.body{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient rgba(180, 156, 16, 0.8);
+}
+
+.body-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 300px;
+}
+
+.about{
+    font-family: muli;
+    padding-left: 10%;
+    justify-content: center;
+    /* flex-direction: column; */
+    min-height: 450px;
+}
+
+.about h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 76px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: muli;
+    letter-spacing: 1.8px;
+    color: rgba(20, 6, 6, 0.753);      
+}
+
+.about p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.0rem;
+    font-family: muli;
+    letter-spacing: 0.1rem;
+}
+.btn{
+    margin-top: 25px;
+}
+
+.body-content img{
+    height: 450px;
+    width: 100%;
+    padding: 70px 0px 0px 100px;
+    object-fit: cover;
+    padding-bottom: 15px;
+}
+
+.objectives{
+    font-family: muli;
+    padding-left: 5%;
+    justify-content: center;
+    padding-left: 5%;
+    /* flex-direction: column; */
+    min-height: 450px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.objectives h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: muli;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.objectives p{
+    margin-bottom: 0px;
+    font-family: muli;
+    text-transform: capitalize;
+    text-align: justify;
+    line-height: 2.5rem;
+    color: rgba(102, 102, 102, 0.719);
+    margin-bottom: 30px;
+}
+
+.footer-section{
+    width: 100%;
+    min-height: 450px;
+    background: rgb(0, 29, 56);
+    box-sizing: border-box;
+    font-family: muli;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 150px 0px 0px;
+
+}
+
+.footer-container h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 5px 0px 8px;
+}
+
+.footer-container p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.footer-nav{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 100px 40px 60px;
+    border-bottom: 1px solid rgb(51, 74, 96);
+       
+}
+
+.coppyright{
+    font-size: 13px;
+    color: rgb(199, 199, 199);
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 0px 60px;
+    
+}
